@@ -36,7 +36,11 @@ export class LoginComponent implements OnInit, OnDestroy {
       return;
     }
     this.http.get<any>('http://localhost:3000/profile').subscribe((res) => {
+      console.log(res);
+
       const user = res.find((acc: any) => {
+        console.log(acc);
+
         id = acc.id;
         return acc.email === email && acc.password === password;
       });

@@ -1,5 +1,5 @@
 <div class="home-container">
-  <div class="home__header">
+  <div class="home__header d-flex">
     <div class="home__header__left">
       <img mat-card-avatar src="assets/fb-head.jpg" />
       <div class="input">
@@ -9,7 +9,7 @@
         </form>
       </div>
     </div>
-    <div class="home__header__middle">
+    <div class="home__header__middle d-none d-lg-flex">
       <div class="active">
         <mat-icon>home</mat-icon>
       </div>
@@ -26,7 +26,7 @@
         <mat-icon>flag</mat-icon>
       </div>
     </div>
-    <div class="home__header__right">
+    <div class="home__header__right col-md-6">
       <div>
         <img alt="" mat-card-avatar [src]="user?.avatar" />
         <span class="name">{{ user?.fname || "bardesy" }}</span>
